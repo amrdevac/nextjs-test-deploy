@@ -9,19 +9,17 @@ function Index() {
       <Head>
         <title>{"mainTitle"}</title>
       </Head>
-      <div>helo</div>
-      {/* <Drawer mainTitle="Dashboard">
-        Dashboard
-      </Drawer> */}
+      <div className="bg-white p-4">helo</div>
     </>
   );
 }
 
 Index.getLayout = (page) => {
-  console.log(page);
-  <>
-    <DashboardLayout>{page}</DashboardLayout>
-  </>;
+  return (
+    <>
+      <DashboardLayout>{page}</DashboardLayout>
+    </>
+  );
 };
 
 export default Index;
